@@ -13,5 +13,6 @@ PROVIDER_FILE_NAME=terraform-provider-alibabacloudstack_v1.0.32
 wget $DOWNLOADURL -O provider.zip &&
   unzip -o provider.zip &&
   chmod +x $PROVIDER_FILE_NAME &&
+  mkdir -p $TERRAFORM_DIR &&
   mv $PROVIDER_FILE_NAME $TERRAFORM_DIR
   rm -f provider.zip
