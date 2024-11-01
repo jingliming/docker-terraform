@@ -6,9 +6,9 @@ set -x
 
 echo "Downloading: copy alibaba stack provider"
 
-TERRAFORM_DIR=/root/.terraform.d/plugins/registry.opentofu.org/aliyun/alibabacloudstack/1.0.32/darwin_arm64/
-DOWNLOADURL=https://mirrors.aliyun.com/terraform/registry.terraform.io/hashicorp/alibabacloudstack/terraform-provider-alibabacloudstack_1.0.32_darwin_arm64.zip
-PROVIDER_FOLDER_NAME=terraform-provider-alibabacloudstack_1.0.32_darwin_arm64
+TERRAFORM_DIR=/root/.terraform.d/plugins/registry.opentofu.org/aliyun/alibabacloudstack/1.0.32/linux_arm64/
+DOWNLOADURL=https://mirrors.aliyun.com/terraform/registry.terraform.io/hashicorp/alibabacloudstack/terraform-provider-alibabacloudstack_1.0.32_linux_arm64.zip
+PROVIDER_FOLDER_NAME=terraform-provider-alibabacloudstack_1.0.32_linux_arm64
 PROVIDER_FILE_NAME=terraform-provider-alibabacloudstack_v1.0.32
 wget $DOWNLOADURL -O provider.zip &&
   unzip -o provider.zip &&
